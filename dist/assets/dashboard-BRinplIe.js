@@ -1,0 +1,22 @@
+import{j as e}from"./query-6GUoIi4R.js";import{b as j}from"./data-CCzabm4Z.js";import{c as t,u,f as y,a as r}from"./index-DEGv2erv.js";import{C as a}from"./card-QylI1wVa.js";import{U as f}from"./users-BkYhTxqr.js";import{R as i,A as v,C as o,X as c,Y as n,T as d,a as N,B as g,b}from"./charts-B8nXmIFb.js";import"./router-Dgfb83dm.js";/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const k=[["path",{d:"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2",key:"169zse"}]],D=t("Activity",k);/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const C=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]],A=t("Clock",C);/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const _=[["line",{x1:"12",x2:"12",y1:"2",y2:"22",key:"7eqyqh"}],["path",{d:"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6",key:"1b0p4s"}]],M=t("DollarSign",_);/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const K=[["path",{d:"m12 14 4-4",key:"9kzdfg"}],["path",{d:"M3.34 19a10 10 0 1 1 17.32 0",key:"19p75a"}]],R=t("Gauge",K),B=[{name:"Jan",value:280},{name:"Feb",value:360},{name:"Mar",value:520},{name:"Apr",value:640},{name:"May",value:790},{name:"Jun",value:980}];function I(){const l=u(s=>s.t),m=[{label:"Revenue",value:y(9842e5),icon:M,delta:"+18.4%"},{label:"Users",value:r(48120),icon:f,delta:"+11.2%"},{label:"Orders",value:r(12480),icon:D,delta:"+24.1%"},{label:"P95 Load",value:"740ms",icon:R,delta:"-8.6%"}];return e.jsxs("main",{className:"container-page py-8",children:[e.jsx("h1",{className:"text-4xl font-black",children:l("dashboardTitle")}),e.jsx("p",{className:"mt-1 text-muted-foreground",children:"Professional KPIs, charts, tables, activity, and performance metrics."}),e.jsx("div",{className:"mt-6 grid gap-3 md:grid-cols-4",children:m.map(({label:s,value:x,icon:p,delta:h})=>e.jsxs(a,{className:"p-5",children:[e.jsxs("div",{className:"flex items-center justify-between",children:[e.jsx("p",{className:"text-sm text-muted-foreground",children:s}),e.jsx(p,{className:"h-5 w-5 text-primary"})]}),e.jsx("p",{className:"mt-3 text-2xl font-black",children:x}),e.jsx("p",{className:"mt-1 text-sm font-bold text-success",children:h})]},s))}),e.jsxs("div",{className:"mt-6 grid gap-6 lg:grid-cols-[1fr_420px]",children:[e.jsxs(a,{className:"p-5",children:[e.jsx("h2",{className:"font-black",children:"Revenue analytics"}),e.jsx("div",{className:"mt-4 h-80",children:e.jsx(i,{children:e.jsxs(v,{data:B,children:[e.jsx("defs",{children:e.jsxs("linearGradient",{id:"revenue",x1:"0",y1:"0",x2:"0",y2:"1",children:[e.jsx("stop",{offset:"5%",stopColor:"#6D28D9",stopOpacity:.35}),e.jsx("stop",{offset:"95%",stopColor:"#6D28D9",stopOpacity:0})]})}),e.jsx(o,{strokeDasharray:"3 3",opacity:.18}),e.jsx(c,{dataKey:"name"}),e.jsx(n,{}),e.jsx(d,{}),e.jsx(N,{type:"monotone",dataKey:"value",stroke:"#6D28D9",fill:"url(#revenue)",strokeWidth:3})]})})})]}),e.jsxs(a,{className:"p-5",children:[e.jsx("h2",{className:"font-black",children:l("activity")}),e.jsx("div",{className:"mt-4 space-y-3",children:["Order KM-20391 approved","Role Manager updated","Binafsha Shulasi 2 promotion edited","Security audit log exported"].map(s=>e.jsxs("div",{className:"flex gap-3 rounded-md bg-muted p-3",children:[e.jsx(A,{className:"mt-0.5 h-4 w-4 text-primary"}),e.jsxs("div",{children:[e.jsx("p",{className:"text-sm font-bold",children:s}),e.jsx("p",{className:"text-xs text-muted-foreground",children:"2 minutes ago"})]})]},s))})]})]}),e.jsxs(a,{className:"mt-6 p-5",children:[e.jsx("h2",{className:"font-black",children:"Top selling books"}),e.jsx("div",{className:"mt-4 h-72",children:e.jsx(i,{children:e.jsxs(g,{data:j.slice(0,8).map(s=>({name:s.title.slice(0,12),sold:s.sold})),children:[e.jsx(o,{strokeDasharray:"3 3",opacity:.18}),e.jsx(c,{dataKey:"name"}),e.jsx(n,{}),e.jsx(d,{}),e.jsx(b,{dataKey:"sold",fill:"#6D28D9",radius:[6,6,0,0]})]})})})]})]})}export{I as DashboardPage};
+//# sourceMappingURL=dashboard-BRinplIe.js.map

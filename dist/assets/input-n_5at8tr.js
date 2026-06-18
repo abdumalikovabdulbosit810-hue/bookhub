@@ -1,0 +1,2 @@
+import{j as t}from"./query-6GUoIi4R.js";import{r as a}from"./router-Dgfb83dm.js";import{b as i}from"./index-DEGv2erv.js";const e=a.forwardRef(({className:r,...o},s)=>t.jsx("input",{ref:s,className:i("h-11 w-full rounded-md border bg-card px-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-60",r),...o}));e.displayName="Input";export{e as I};
+//# sourceMappingURL=input-n_5at8tr.js.map
