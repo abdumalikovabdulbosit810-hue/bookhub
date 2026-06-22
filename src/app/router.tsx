@@ -1,15 +1,12 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { ProtectedRoute } from "@/features/auth/protected-route";
 import { AppShell } from "@/widgets/app-shell";
 import { Skeleton } from "@/shared/ui/skeleton";
 
 const HomePage = lazy(() => import("@/pages/home").then((module) => ({ default: module.HomePage })));
 const BooksPage = lazy(() => import("@/pages/books").then((module) => ({ default: module.BooksPage })));
-const DashboardPage = lazy(() => import("@/pages/dashboard").then((module) => ({ default: module.DashboardPage })));
+const LikesPage = lazy(() => import("@/pages/likes").then((module) => ({ default: module.LikesPage })));
 const AdminPage = lazy(() => import("@/pages/admin").then((module) => ({ default: module.AdminPage })));
-const SettingsPage = lazy(() => import("@/pages/settings").then((module) => ({ default: module.SettingsPage })));
-const LoginPage = lazy(() => import("@/pages/login").then((module) => ({ default: module.LoginPage })));
 const NotFoundPage = lazy(() => import("@/pages/not-found").then((module) => ({ default: module.NotFoundPage })));
 
 function PageLoader() {
@@ -17,7 +14,9 @@ function PageLoader() {
     <div className="container-page py-8">
       <Skeleton className="h-72 w-full" />
       <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
-        {Array.from({ length: 8 }).map((_, index) => <Skeleton key={index} className="h-48" />)}
+        {Array.from({ length: 8 }).map((_, index) => (
+          <Skeleton key={index} className="h-48" />
+        ))}
       </div>
     </div>
   );
@@ -32,15 +31,8 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: withSuspense(<HomePage />) },
       { path: "books", element: withSuspense(<BooksPage />) },
-      { path: "login", element: withSuspense(<LoginPage />) },
-      {
-        element: <ProtectedRoute />,
-        children: [
-          { path: "dashboard", element: withSuspense(<DashboardPage />) },
-          { path: "admin", element: withSuspense(<AdminPage />) },
-          { path: "settings", element: withSuspense(<SettingsPage />) }
-        ]
-      },
+      { path: "likes", element: withSuspense(<LikesPage />) },
+      { path: "admin", element: withSuspense(<AdminPage />) },
       { path: "*", element: withSuspense(<NotFoundPage />) }
     ]
   }

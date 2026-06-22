@@ -17,8 +17,8 @@ const config: Config = {
         muted: "hsl(var(--muted))",
         "muted-foreground": "hsl(var(--muted-foreground))",
         primary: {
-          DEFAULT: "#6D28D9",
-          foreground: "#ffffff"
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))"
         },
         success: "#10B981",
         warning: "#F59E0B",

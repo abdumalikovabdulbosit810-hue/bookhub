@@ -7,6 +7,7 @@ export type ApiResult<T> = {
     page: number;
     pageSize: number;
     total: number;
+    hasMore?: boolean;
   };
 };
 
@@ -26,7 +27,6 @@ export const paginationSchema = z.object({
 });
 
 export async function secureRequest<T>(factory: () => Promise<T>): Promise<T> {
-  await new Promise((resolve) => window.setTimeout(resolve, 220));
   try {
     return await factory();
   } catch (error) {
